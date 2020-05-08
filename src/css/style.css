@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Ubuntu+Mono&display=swap');
+
+* {
+    font-family: 'Balsamiq Sans', sans-serif;
+}
+
+code, xmp {
+    font-family: 'Ubuntu Mono', monospace;
+    color: #4DBA87;
+}
+
+h2 {
+  margin-top: 20px;
+}
