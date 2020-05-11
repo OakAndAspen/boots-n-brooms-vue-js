@@ -1,5 +1,7 @@
 <template>
-    <h1>This is the home page</h1>
+    <div id="RouteHome">
+        <h1>This is the home page</h1>
+    </div>
 </template>
 
 <script>
@@ -9,7 +11,5 @@
 </script>
 
 <style scoped>
-    h1 {
-        color: brown;
-    }
+
 </style>
