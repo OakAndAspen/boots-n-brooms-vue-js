@@ -1,3 +1,4 @@
+import {availableLanguages} from "src/js/config/constants.js";
 import {i18n} from "src/js/config/i18n.js";
 import RouteAbout from "src/js/routes/RouteAbout.vue";
 import RouteContact from "src/js/routes/RouteContact.vue";
@@ -20,9 +21,13 @@ const routes = [
         },
         beforeEnter(to, from, next) {
             const lang = to.params.lang;
-            if (!["fr", "en"].includes(lang)) return next("fr");
-            if (i18n.locale !== lang) i18n.locale = lang;
-            return next();
+            if (!availableLanguages.includes(lang)) return next("fr");
+            if (i18n.locale === lang) return next();
+            import('src/js/translations/' + lang + '.json').then(messages => {
+                i18n.setLocaleMessage(lang, messages.default || messages);
+                i18n.locale = lang;
+                return next();
+            });
         },
         children: [
             {
