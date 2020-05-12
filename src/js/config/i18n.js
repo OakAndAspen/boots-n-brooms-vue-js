@@ -8,10 +8,18 @@ export const i18n = new VueI18n({
     fallbackLocale: "fr",
     messages: {
         en: {
-            hello: "Hi my friends"
+            pages: {
+                home: {
+                    title: "Everything for the wandering adventurer!"
+                }
+            }
         },
         fr: {
-            hello: "Hello mes amis"
+            pages: {
+                home: {
+                    title: "Tout ce qu'il faut pour partir à l'aventure"
+                }
+            }
         }
     }
 });

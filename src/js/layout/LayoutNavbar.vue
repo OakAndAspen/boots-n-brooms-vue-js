@@ -27,6 +27,11 @@
                             Créer un compte
                         </router-link>
                     </li>
+                    <li class="nav-item">
+                        <span @click="changeLanguage('fr')" class="pointer">FR</span>
+                        <span class="mx-2">|</span>
+                        <span @click="changeLanguage('en')" class="pointer">EN</span>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -49,6 +54,11 @@
                     {label: "À propos", link: "/a-propos"},
                     {label: "Contact", link: "/contact"}
                 ]
+            }
+        },
+        methods: {
+            changeLanguage(lang) {
+                this.$i18n.locale = lang;
             }
         }
     }

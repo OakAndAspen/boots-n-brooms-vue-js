@@ -2,8 +2,7 @@
     <div class="App">
         <layout-header></layout-header>
         <section class="container py-4">
-            <!--<p>Hello: {{ $t("hello") }}</p>-->
-            <p>Hello: {{ $t("hello") }}</p>
+
             <router-view></router-view>
         </section>
         <layout-footer></layout-footer>

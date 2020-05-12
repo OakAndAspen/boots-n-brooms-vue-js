@@ -1,6 +1,6 @@
 <template>
     <div id="RouteHome">
-        <h1>Tout pour partir à l'aventure!</h1>
+        <h1>{{$t("pages.home.title")}}</h1>
     </div>
 </template>
 
@@ -9,7 +9,3 @@
         name: "RouteHome"
     }
 </script>
-
-<style scoped>
-
-</style>
