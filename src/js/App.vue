@@ -1,7 +1,7 @@
 <template>
     <div class="App">
         <layout-header></layout-header>
-        <section class="container py-4">
+        <section class="container py-4 my-4">
 
             <router-view></router-view>
         </section>
