@@ -1,6 +1,6 @@
 <template>
     <div id="RouteHome">
-        <h1>This is the home page</h1>
+        <h1>Tout pour partir à l'aventure!</h1>
     </div>
 </template>
 
