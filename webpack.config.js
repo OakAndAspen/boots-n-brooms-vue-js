@@ -1,5 +1,6 @@
 const path = require('path');
 const VueLoaderPlugin = require('vue-loader/lib/plugin')
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
     mode: 'development',
@@ -10,11 +11,13 @@ module.exports = {
     },
     resolve: {
         alias: {
-            src: path.resolve(__dirname, 'src')
+            src: path.resolve(__dirname, 'src'),
+            vue: 'vue/dist/vue.esm.js'
         }
     },
     devServer: {
         contentBase: './dist',
+        historyApiFallback: true
     },
     module: {
         rules: [
@@ -48,6 +51,11 @@ module.exports = {
         ]
     },
     plugins: [
-        new VueLoaderPlugin()
+        new VueLoaderPlugin(),
+        new HtmlWebpackPlugin({
+            title: 'Boots & Brooms',
+            favicon: 'src/images/logo-200.png',
+            template: 'src/index.html'
+        })
     ]
 };

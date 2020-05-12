@@ -14,23 +14,31 @@
                 <ul id="LayoutNavbarMenu2" class="nav align-items-center flex-column flex-md-row">
                     <li class="nav-item">
                         <router-link class="nav-link" to="/cart">
-                            <font-awesome-icon icon="cart-plus"/>
+                            <font-awesome-icon icon="cart-plus" title="Votre panier"/>
                         </router-link>
                     </li>
                     <li class="nav-item">
                         <router-link class="nav-link" to="/connexion">
-                            Connexion
+                            <font-awesome-icon icon="sign-in-alt" title="Se connecter"/>
                         </router-link>
                     </li>
                     <li class="nav-item">
                         <router-link class="nav-link" to="/creer-compte">
-                            Créer un compte
+                            <font-awesome-icon icon="user-plus" title="Créer un compte"/>
                         </router-link>
                     </li>
                     <li class="nav-item">
-                        <span @click="changeLanguage('fr')" class="pointer">FR</span>
-                        <span class="mx-2">|</span>
-                        <span @click="changeLanguage('en')" class="pointer">EN</span>
+                        <span class="nav-link">
+                            <span @click="changeLanguage('fr')"
+                                  class="pointer" title="Français">
+                                FR
+                            </span>
+                            <span>|</span>
+                            <span @click="changeLanguage('en')"
+                                  class="pointer" title="English">
+                                EN
+                            </span>
+                        </span>
                     </li>
                 </ul>
             </div>
@@ -49,10 +57,10 @@
                 logo: logo,
                 brand: brand,
                 menu: [
-                    {label: "Accueil", link: "/"},
-                    {label: "Shop", link: "/shop"},
-                    {label: "À propos", link: "/a-propos"},
-                    {label: "Contact", link: "/contact"}
+                    {label: "Accueil", link: "/fr/"},
+                    {label: "Shop", link: "/fr/shop"},
+                    {label: "À propos", link: "/fr/a-propos"},
+                    {label: "Contact", link: "/fr/contact"}
                 ]
             }
         },
