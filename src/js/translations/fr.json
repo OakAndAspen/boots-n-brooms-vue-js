@@ -1,7 +1,10 @@
 {
     "pages": {
         "home": {
-            "title": "Tout ce qu'il faut pour partir à l'aventure!"
+            "title": "La boutique de l'aventurier",
+            "text": "Chez Boots & Brooms, vous trouverez tout ce qu'il faut pour partir à l'aventure !",
+            "bottom": "Visitez-nous à notre magasin, ou commandez en ligne dans notre shop !",
+            "button": "Vers le shop"
         }
     }
 }

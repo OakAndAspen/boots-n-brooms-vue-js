@@ -7,3 +7,7 @@
 .pointer {
     cursor: pointer;
 }
+
+.small-caps {
+    font-variant: all-small-caps;
+}
