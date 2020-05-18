@@ -5,10 +5,23 @@ import {
     faFlaskPotion,
     faHelmetBattle,
     faHoodCloak,
+    faPercentage,
     faPie,
+    faRing,
     faStaff,
-    faSword,
-    faRing
+    faStar,
+    faSword
 } from '@fortawesome/pro-light-svg-icons';
 
-library.add(faSword, faHelmetBattle, faHoodCloak, faPie, faFlaskPotion, faStaff, faBooks, faCat, faRing);
+library.add(faBooks,
+    faCat,
+    faFlaskPotion,
+    faHelmetBattle,
+    faHoodCloak,
+    faPie,
+    faRing,
+    faStaff,
+    faStar,
+    faSword,
+    faPercentage
+);
