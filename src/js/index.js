@@ -1,6 +1,6 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.min";
-import "src/css/style.css";
+import "src/css/style.scss";
 import Vue from "vue";
 import {i18n} from "src/js/config/i18n.js";
 import {router} from "src/js/config/vue-router.js";
