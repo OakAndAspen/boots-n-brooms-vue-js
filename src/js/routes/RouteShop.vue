@@ -1,6 +1,5 @@
 <template>
     <div id="RouteShop">
-        <img :src="image" alt="I tried">
         <div class="row">
             <div class="col-4">
                 <shop-menu/>
@@ -24,17 +23,15 @@
 
 <script>
     import ShopMenu from "src/js/components/ShopMenu.vue";
-    import logo from "src/images/logo-200.png";
-    import knife from "src/images/icons/Icon3.png";
-    import palandro from "src/images/icons/Icon4.png";
-    import boots from "src/images/icons/Icon9.png";
+    import knife from "src/images/products/knife.png";
+    import palandro from "src/images/products/palandro.png";
+    import boots from "src/images/products/boots.png";
 
     export default {
         name: "RouteShop",
         components: {ShopMenu},
         data() {
             return {
-                image: logo,
                 products: [
                     {
                         label: "Couteau multi",
