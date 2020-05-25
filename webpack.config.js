@@ -61,7 +61,6 @@ module.exports = {
     plugins: [
         new VueLoaderPlugin(),
         new HtmlWebpackPlugin({
-            title: 'Boots & Brooms',
             favicon: 'src/images/logo-200.png',
             template: 'src/index.html'
         })
