@@ -8,6 +8,7 @@ module.exports = {
     output: {
         filename: 'bundle.js',
         path: path.resolve(__dirname, 'dist'),
+        publicPath: '/',
     },
     resolve: {
         alias: {
@@ -16,8 +17,7 @@ module.exports = {
         }
     },
     devServer: {
-        contentBase: './dist',
-        historyApiFallback: true
+        historyApiFallback: true,
     },
     module: {
         rules: [
